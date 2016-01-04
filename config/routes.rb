@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'users/update'
 
-  get 'products/index'
+  root 'products#index'
 
   get 'products/show'
 
