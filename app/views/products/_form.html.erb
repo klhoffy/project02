@@ -20,6 +20,10 @@
 		<%= f.number_field :quantity %>
 	</div>
 	<div>
+		<%= f.label :image_url %>
+		<%= f.file_field :image_url %>
+	</div>
+	<div>
 		<%= f.submit %>
 	</div>
 <% end %>

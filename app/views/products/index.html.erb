@@ -4,7 +4,7 @@
 		<div class="row">
 			<% @products.each do |product| %>
 				<div class="col-md-4">
-					
+					<%= image_tag(product.image_url, class: 'list_image', size: '260x320') %>
           <%= product.name %> <br/>
           <%= product.price %> <br/>
           <%= link_to 'Show', product_path(product) %><br/>
