@@ -1,9 +1,21 @@
 Rails.application.routes.draw do
-  get 'users/index'
+  get 'sessions/new'
 
-  get 'users/create'
+  get 'sessions/create'
 
-  get 'users/update'
+  get 'sessions/destroy'
+
+  get 'users' => 'users#index'
+
+  get 'users/new' => 'users#new', as: :new_user
+
+  post 'users/' => 'users#create'
+
+  get 'users/:id/edit' => 'users#edit', as: :edit_user
+
+  patch 'users/:id' => 'users#update'
+
+  delete 'users/:id' => 'users#destroy'
 
   root 'products#index'
 

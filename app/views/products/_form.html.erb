@@ -1,1 +1,25 @@
-_form.html.erb
+<%= form_for @product do |f| %>
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div>
+		<%= f.label :description %>
+		<%= f.text_field :description %>
+	</div>
+	<div>
+		<%= f.label :price %>
+		<%= f.number_field :price %>
+	</div>
+	<div>
+		<%= f.label :category %>
+		<%= f.text_field :category %>
+	</div>
+	<div>
+		<%= f.label :quantity %>
+		<%= f.number_field :quantity %>
+	</div>
+	<div>
+		<%= f.submit %>
+	</div>
+<% end %>
