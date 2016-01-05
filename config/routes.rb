@@ -1,15 +1,17 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+  get 'login' => 'sessions#new'
 
-  get 'sessions/create'
+  post 'login' => 'sessions#create'
 
-  get 'sessions/destroy'
+  get 'logout' => 'sessions#destroy'
 
   get 'users' => 'users#index'
 
   get 'users/new' => 'users#new', as: :new_user
 
   post 'users/' => 'users#create'
+
+  get 'users/:id' => 'users#show', as: :user
 
   get 'users/:id/edit' => 'users#edit', as: :edit_user
 
@@ -21,10 +23,10 @@ Rails.application.routes.draw do
 
   get 'products/show'
 
-  get 'products/edit'
-
   get 'products/create'
 
+  get 'products/edit'
+  
   get 'products/update'
 
   get 'products/destroy'
