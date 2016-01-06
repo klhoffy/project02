@@ -34,6 +34,7 @@ class ProductsController < ApplicationController
   end
 
   def destroy
+    @product = Product.find(params[:id])
     @product.destroy
     redirect_to root_path
   end
