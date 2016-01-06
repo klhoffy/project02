@@ -1,18 +1,19 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-  	<ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   root_path %></li>
+  	<ul class="nav navbar-nav navbar-left">
+      <li><%= link_to "Home",   root_path %></li>
         <% if logged_in? %>
+          <li><%= link_to "My Profile", edit_user_path(current_user) %></li>
           <li><%= link_to "Logout", logout_path %></li>
-          <li><%= link_to "Edit My Profile", edit_user_path(current_user) %></li>
-          <li><%= link_to "", root_path, :class => "glyphicon glyphicon-shopping-cart" %></li>
+          
         <% else %>
           <li><%= link_to "Login", login_path %></li>
           <li><%= link_to "Sign Up", new_user_path %></li>
-          
         <% end %>
     </ul>
-    
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "#{current_order.order_items.size}  ( #{number_to_currency current_order.subtotal} )", cart_path, :class => "glyphicon glyphicon-shopping-cart" %></li>
+    </ul>
   </div>
 </nav>
 
