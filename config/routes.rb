@@ -27,11 +27,25 @@ Rails.application.routes.draw do
 
   get 'products/:id' => 'products#show', as: :product
 
-  get 'users/:user_id/cart' => 'cart#index', as: :cart
+  get '/cart' => 'cart#index'
 
-  get 'users/:user_id/cart/clear' => 'cart#clearCart', as: :cart_clear
+  get '/cart/clear' => 'cart#clearCart'
 
-  get 'users/:user_id/cart/:id' => 'cart#add'
+  get '/cart/:id' => 'cart#add'
+
+  # get 'users/:user_id/cart' => 'cart#index', as: :cart
+
+  # post 'users/:user_id/cart' => 'cart#create', as: :user_cart
+
+  # get 'users/:user_id/cart/new' => 'cart#new', as: :new_cart
+
+  # get 'users/:user_id/cart/:id/edit' => 'cart#edit', as: :edit_cart
+
+  # get 'users/:user_id/cart/:id' => 'cart#show', as: :cart
+
+  # patch 'users/:user_id/cart/:id' => 'cart#update'
+
+  # delete 'users/:user_id/cart/:id' => 'cart#destroy'
 
   get 'products/:id/edit' => 'products#edit', as: :edit_product
   
