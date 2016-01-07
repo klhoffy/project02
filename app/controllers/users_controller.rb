@@ -1,6 +1,11 @@
 class UsersController < ApplicationController
+  before_action :authenticate
+
   def index
     @users = User.all
+    if @user != current_user
+      redirect_to login_path
+    end
   end
 
   def new
@@ -9,6 +14,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+
   end
 
   def create

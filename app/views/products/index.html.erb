@@ -11,7 +11,7 @@
           		 <p>$<%= product.price %></p>
 	          		<div class="btn btn-default"><%= link_to 'Show', product_path(product) %>
 	          		</div>
-	          		<div class="btn btn-primary"><%= link_to 'Add to Cart', product_path(product) %>
+	          		<div class="btn btn-primary"><a href="users/:user_id/cart/<%= product.id %>">Add to Cart
 	          		</div>
           	</div>
           </div>
