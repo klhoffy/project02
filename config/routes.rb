@@ -45,7 +45,7 @@ Rails.application.routes.draw do
 
   resources :order_items, only: [:create, :update, :destroy]
 
-
+  resource :charges
 
 
   # The priority is based upon order of creation: first created -> highest priority.

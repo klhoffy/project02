@@ -38,4 +38,6 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  # PUBLISHABLE_KEY=sk_test_o6YybefojBhiOh0CxbKi7EFc SECRET_KEY=pk_test_e73SgbaApAB0WXSfB8cdTrnv rails s
 end

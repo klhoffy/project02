@@ -22,4 +22,16 @@ class ApplicationController < ActionController::Base
 			Order.new
 		end
 	end
+
+  def current_cart
+    current_user.current_cart if current_user.present?
+  end
+
+  def authenticate
+    unless logged_in?
+      flash[:error] = "You must be logged in to access this"
+      redirect_to login_url
+    end
+  end
+
 end
