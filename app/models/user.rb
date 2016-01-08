@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
-	belongs_to :cart
+	has_many :carts
+	has_many :products, through: :carts
     has_secure_password
 end

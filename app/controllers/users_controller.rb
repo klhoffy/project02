@@ -46,8 +46,12 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+  def cart
+    @products = Product.all
+  end
+
   private
   	def user_params
-  		params.require(:user).permit(:username, :email, :password, :password_confirmation, :cart_id)
+  		params.require(:user).permit(:email, :password, :password_confirmation, :carts_attributes => [:id, :price_total, :product_id])
   	end
 end

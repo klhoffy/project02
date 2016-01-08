@@ -62,9 +62,9 @@ class CartController < ApplicationController
   #   	end
 	end
 
-	# private
-	# 	def cart_params
-	# 		params.require(:cart).permit(:price_total, :user_id, :product_id)
-	# 	end
+	private
+		def cart_params
+			params.require(:cart).permit(:price_total, :user_id, :product_id)
+		end
 
 end
