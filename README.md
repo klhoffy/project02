@@ -50,7 +50,7 @@ Click Sign Up in Nav button then enter your information in the form:
 <br>
 Then add that product to your cart and see what you already have:
 <br>
-![Shopping Cart](/app/assets/images/shopping_cart.png)
+![Shopping Cart](/app/assets/shopping_cart.png)
 
 ######Step 3: Update your profile.
 When logged in, you can update your email or password:
