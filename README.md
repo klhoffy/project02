@@ -16,15 +16,17 @@ This app is am e-commerce site for needlepoint canvases available to purchase. A
 
 #### Technologies Used
 
-* Ruby 2.1.5
+* Ruby 2.2.1
 
-* Rails 4.2.1
+* Rails 4.2.2
 
 * PostgreSQL Database
 
-* Bootstrap-SASS ~> 3.3.4
+* Bootstrap-SASS ~> 3.2.0
 
 * Paperclip
+
+* Bcrypt ~> 3.1.7
 
 #### Catherine Lenore
 
