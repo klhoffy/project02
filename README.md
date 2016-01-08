@@ -41,7 +41,7 @@ If you fork this repo, you must run `bundle install` and `rake db:migrate` in or
 ######Step 1: Create a profile for yourself.
 Click Sign Up in Nav button then enter your information in the form:
 <br>
-![Sign Up Page](/app/assets/images/create_file.png)
+![Sign Up Page](/app/assets/images/create_profile.png)
 
 ######Step 2: Check out all the products available on the home page and then select a product for more detail:
 ![Product Show Page](/app/assets/images/show_page.png)
@@ -60,3 +60,22 @@ To access the shopping cart or update your profile, you need to login:
 <br>
 ![Login](/app/assets/images/login_page.png)
 
+#### UX for Project
+
+######Site Map
+![Site Map](/app/assets/images/flow_chart.png)
+
+######Wireframes
+Home Page
+<br>
+![Wireframe Home Page](/app/assets/images/wireframe01.png)
+<br>
+Product Page
+<br>
+![Wireframe Product Page](/app/assets/images/wireframe02.png)
+Shopping Cart Page
+<br>
+![Wireframe Shopping Cart Page](/app/assets/images/wireframe03.png)
+
+######User Stories
+![User Stories](/app/assets/images/user_stories.png)
