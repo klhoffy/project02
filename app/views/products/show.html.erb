@@ -14,7 +14,7 @@
           </div>
           <ul class="list-group">
           	<li class="list-group-item">$<%= @product.price %></li>
-          	<li class="btn btn-primary"><%= link_to 'Add to Cart', product_path(@product) %></li>
+          	<li class="btn btn-primary"><%= link_to 'Add to Cart', product_path(@product), :class => "cart" %></li>
           </ul>
          </div>
 			</div>

@@ -18,6 +18,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
 body {
 	padding-top: 70px;
+	background-image: "../app/assets/images/TriangleStitch_03.png";
+	font-family: 'Poiret One', cursive;
 }
+
+.cart {
+	color: white;
+}
+
