@@ -1,5 +1,5 @@
 <div class="container">
-	<h1 align="center">Products</h1>
+	<h1 align="center"><%= image_tag("logo.png") %></h1>
 	<% @products.each_slice(3) do |products| %>
 		<div class="row">
 			<% products.each do |product| %>
