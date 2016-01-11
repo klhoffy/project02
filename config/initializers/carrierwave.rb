@@ -1,4 +1,4 @@
-if Rails.env.production?
+
   CarrierWave.configure do |config|
     config.root = Rails.root.join('tmp') # adding these...
 	  config.cache_dir = 'carrierwave' # ...two lines
@@ -15,4 +15,3 @@ if Rails.env.production?
 	  config.fog_public     = false                                   # optional, defaults to true
 	  config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
 	end
-end
