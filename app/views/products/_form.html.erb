@@ -1,4 +1,4 @@
-<%= form_for(@product, :multipart => true) do |f| %>
+<%= form_for(@product, html: { multipart => true }) do |f| %>
 	<div class="form-group">
 		<label for="exampleInputName1"><%= f.label :name %></label>
 		<%= f.text_field :name, :class => "form-control", :id => "exampleInputName1", :placeholder => "Name" %>
@@ -21,9 +21,18 @@
 	</div>
 	<div class="form-group">
 		<label for="exampleInputFile"><%= f.label :image %></label>
-		<%= f.file_field :image, :class => "form-control", :id => "exampleInputFile" %>
+		<%= f.file_field :ipicture, , accept: 'image/jpeg,image/gif,image/png', :class => "form-control", :id => "exampleInputFile" %>
 	</div>
 	<div class="form-group">
 		<%= f.submit %>
 	</div>
 <% end %>
+
+<script type="text/javascript">
+  $('#product_picture').bind('change', function() {
+    var size_in_megabytes = this.files[0].size/1024/1024;
+    if (size_in_megabytes > 5) {
+      alert('Maximum file size is 5MB. Please choose a smaller file.');
+    }
+  });
+</script>

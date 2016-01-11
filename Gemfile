@@ -31,6 +31,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'figaro'
 gem 'fog'
 gem 'aws-sdk', '~> 1.36.1'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
