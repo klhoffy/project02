@@ -83,3 +83,4 @@ production:
   database: CatherineLenoreApp_production
   username: CatherineLenoreApp
   password: <%= ENV['CATHERINELENOREAPP_DATABASE_PASSWORD'] %>
+
