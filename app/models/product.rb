@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
 	belongs_to :cart
-	validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+	# validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 	has_attached_file :image, styles: { small: "100x100", med: "300x300", large: "600x600" },:default_url => '/images/missing.png',
 	:url  => ":s3_domain_url",
     :path => "public/images/:id/:style_:basename.:extension",
