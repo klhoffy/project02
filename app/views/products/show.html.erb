@@ -1,23 +1,23 @@
-<div class="container">
+<div class="container-fluid">
 	<h1 align="center"><%= @product.name %></h1>
-		<div class="row">
-			<div class="col-md-7">
-				<%= image_tag @product.image.url(:large) %>
-			</div>
-			<div class="col-md-5" >
-				<div class="panel panel-default">
-          <div class="panel-heading">
-          	<%= @product.name %>
-          </div>
-          <div class="panel-body">
-          		<p><%= @product.description %> </p>
-          </div>
-          <ul class="list-group">
-          	<li class="list-group-item">$<%= @product.price %></li>
-          	<li class="btn btn-primary"><%= link_to 'Add to Cart', product_path(@product), :class => "cart" %></li>
-          </ul>
-         </div>
-			</div>
+	<div class="row">
+		<div class="col-md-7">
+			<%= image_tag @product.image.url(:large) %>
 		</div>
+		<div class="col-md-5" >
+			<div class="panel panel-default">
+                    <div class="panel-heading">
+          	         <%= @product.name %>
+                    </div>
+                    <div class="panel-body">
+          		   <p><%= @product.description %> </p>
+                    </div>
+                    <ul class="list-group">
+          	         <li class="list-group-item">$<%= @product.price %></li>
+          	         <li class="btn btn-primary"><%= link_to 'Add to Cart', product_path(@product), :class => "cart" %></li>
+                    </ul>
+               </div>
+		</div>
+	</div>
 </div>
 

@@ -1,29 +1,31 @@
-<%= form_for(@product, :multipart => true ) do |f| %>
-	<div class="form-group">
-		<label for="exampleInputName1"><%= f.label :name %></label>
-		<%= f.text_field :name, :class => "form-control", :id => "exampleInputName1", :placeholder => "Name" %>
-	</div>
-	<div class="form-group">
-		<label for="exampleInputName1"><%= f.label :description %></label>
-		<%= f.text_field :description, :class => "form-control", :id => "exampleInputName1", :placeholder => "Description" %>
-	</div>
-	<div class="form-group">
-		<label for="exampleInputAmount"><%= f.label :price %></label>
-		<%= f.number_field :price, :class => "form-control", :id => "exampleInputAmount", :placeholder => "Price" %>
-	</div>
-	<div class="form-group">
-		<label for="exampleInputName1"><%= f.label :category %></label>
-		<%= f.text_field :category, :class => "form-control", :id => "exampleInputName1", :placeholder => "Category" %>
-	</div>
-	<div class="form-group">
-		<label for="exampleInputAmount"><%= f.label :quantity %></label>
-		<%= f.number_field :quantity, :class => "form-control", :id => "exampleInputAmount", :placeholder => "Quantity" %>
-	</div>
-	<div class="form-group">
-		<label for="exampleInputFile"><%= f.label :image %></label>
-		<%= f.file_field :image, :class => "form-control", :id => "exampleInputFile" %>
-	</div>
-	<div class="form-group">
-		<%= f.submit %>
-	</div>
-<% end %>
+<div class="container-fluid">
+	<%= form_for(@product, :multipart => true ) do |f| %>
+		<div class="form-group">
+			<label for="exampleInputName1"><%= f.label :name %></label>
+			<%= f.text_field :name, :class => "form-control", :id => "exampleInputName1", :placeholder => "Name" %>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputName1"><%= f.label :description %></label>
+			<%= f.text_field :description, :class => "form-control", :id => "exampleInputName1", :placeholder => "Description" %>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputAmount"><%= f.label :price %></label>
+			<%= f.number_field :price, :class => "form-control", :id => "exampleInputAmount", :placeholder => "Price" %>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputName1"><%= f.label :category %></label>
+			<%= f.text_field :category, :class => "form-control", :id => "exampleInputName1", :placeholder => "Category" %>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputAmount"><%= f.label :quantity %></label>
+			<%= f.number_field :quantity, :class => "form-control", :id => "exampleInputAmount", :placeholder => "Quantity" %>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputFile"><%= f.label :image %></label>
+			<%= f.file_field :image, :class => "form-control", :id => "exampleInputFile" %>
+		</div>
+		<div class="form-group">
+			<%= f.submit %>
+		</div>
+	<% end %>
+</div>

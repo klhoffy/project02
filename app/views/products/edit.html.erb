@@ -1,8 +1,8 @@
-<div class="container">
-<h1>Edit Product</h1>
+<div class="container-fluid">
+	<h1>Edit Product</h1>
 
-<%= render 'form' %>
+	<%= render 'form' %>
 
-<%= link_to 'Cancel', product_path(@product) %><br>
-<%= link_to 'Delete Item', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
+	<%= link_to 'Cancel', product_path(@product) %><br>
+	<%= link_to 'Delete Item', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
